@@ -16,10 +16,13 @@ Make sure that this change is used. You will need to patch it manually right now
 
 ## Usage
 
-* Add the bluetooth devices you want to scan. To enter more than one, use a comma to separate them. IMPORTANT: no space between comma and previous/next device
+* Add the bluetooth devices you want to scan. To enter more than one, use a comma to separate them. 
 * Set the scan interval.
 * Deploy your flow 
 * "present" will be signalized in msg.payload in case of presence. Otherwise "not-present"
+
+## Loxone Configuration
+![node-red-contrib-bt-presence](/doc/node-red-contrib-bt-presence.PNG)
 
 ## Thanks
 Thanks to "cmvee" for the npm modul "bt-presence" which this node-red node uses.
