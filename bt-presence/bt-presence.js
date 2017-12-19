@@ -62,10 +62,9 @@ module.exports = function(RED) {
       });
     }
 
-		if (devices.length < 1) {
-			node.error('No devices are specificed. Please specify the devices in node configuration!');
-		} else {
-
+    if (devices.length < 1) {
+      node.error('No devices are specificed. Please specify the devices in node configuration!');
+    } else {
       btPresence.setDevices(devices);
       btPresence.setScanInterval(interval);
 
