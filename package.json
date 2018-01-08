@@ -1,14 +1,81 @@
 {
-  "name": "node-red-contrib-bt-presence",
-  "version": "1.0.2",
+  "_args": [
+    [
+      {
+        "raw": "node-red-contrib-bt-presence@latest",
+        "scope": null,
+        "escapedName": "node-red-contrib-bt-presence",
+        "name": "node-red-contrib-bt-presence",
+        "rawSpec": "latest",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/usr/lib/node_modules"
+    ],
+    [
+      {
+        "raw": ".",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": ".",
+        "spec": "/usr/lib/node_modules/node-red-contrib-bt-presence",
+        "type": "directory"
+      },
+      "/usr/lib/node_modules/node-red-contrib-bt-presence"
+    ]
+  ],
+  "_from": "node-red-contrib-bt-presence@latest",
+  "_id": "node-red-contrib-bt-presence@1.0.2",
+  "_inCache": true,
+  "_location": "/node-red-contrib-bt-presence",
+  "_nodeVersion": "8.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/node-red-contrib-bt-presence-1.0.2.tgz_1513679058620_0.7135978022124618"
+  },
+  "_npmUser": {
+    "name": "sbernhard",
+    "email": "b.suttner@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": ".",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": ".",
+    "spec": "/usr/lib/node_modules/node-red-contrib-bt-presence",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-bt-presence/-/node-red-contrib-bt-presence-1.0.2.tgz",
+  "_shasum": "5dc5d4fdd648c2abe0a382c8658c68d79ea392d6",
+  "_shrinkwrap": null,
+  "_spec": ".",
+  "_where": "/usr/lib/node_modules/node-red-contrib-bt-presence",
+  "author": {
+    "name": "Bernhard Suttner"
+  },
+  "bugs": {
+    "url": "https://github.com/sbernhard/node-red-contrib-bt-presence/issues"
+  },
+  "dependencies": {
+    "bt-presence": "^2.0.0"
+  },
   "description": "A Node-RED node to detect the presence of bluetooth devices",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sbernhard/node-red-contrib-bt-presence"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-AIUn2vmJ9TdQBEjkOMoKKcYuChz9EJyEVEzJi0oEuxHz6z+MkdTIMgeUVkCryuEe3zAoblHhrfNitpjbGJLxMw==",
+    "shasum": "5dc5d4fdd648c2abe0a382c8658c68d79ea392d6",
+    "tarball": "https://registry.npmjs.org/node-red-contrib-bt-presence/-/node-red-contrib-bt-presence-1.0.2.tgz"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "gitHead": "ade9551be75a64c0450bfa2edf9f79468d53ae15",
+  "homepage": "https://github.com/sbernhard/node-red-contrib-bt-presence",
   "keywords": [
     "bt-presence",
     "l2ping",
@@ -22,20 +89,27 @@
     "nodered bt-presence",
     "nodered contrib bt-presence"
   ],
+  "license": "Apache",
+  "maintainers": [
+    {
+      "name": "sbernhard",
+      "email": "b.suttner@gmail.com"
+    }
+  ],
+  "name": "node-red-contrib-bt-presence",
   "node-red": {
     "nodes": {
       "bt-presence": "bt-presence/bt-presence.js"
     }
   },
-  "author": {
-    "name": "Bernhard Suttner"
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbernhard/node-red-contrib-bt-presence.git"
   },
-  "license": "Apache",
-  "bugs": {
-    "url": "https://github.com/sbernhard/node-red-contrib-bt-presence/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/sbernhard/node-red-contrib-bt-presence",
-  "dependencies": {
-    "bt-presence": "^1.1.0"
-  }
+  "version": "1.0.3"
 }

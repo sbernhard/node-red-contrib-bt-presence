@@ -20,7 +20,8 @@ module.exports = function(RED) {
 
 		RED.nodes.createNode(this, config);
 		var node = this;
-    var btPresence = require('bt-presence')
+    const btPresence = require('bt-presence').btPresence
+    var btp = new btPresence()
 
     node.log("Initialize btPresence");
 
@@ -66,22 +67,22 @@ module.exports = function(RED) {
 			node.error('No devices are specificed. Please specify the devices in node configuration!');
 		} else {
 
-      btPresence.setDevices(devices);
-      btPresence.setScanInterval(interval);
+      btp.setDevices(devices);
+      btp.setIntervalSeconds(interval);
 
       // Looks like the btPresence Object does survive. Remove the
       // Listeners before we add the new one
-      btPresence.removeAllListeners();
-      btPresence.on('present', sendPresent);
-      btPresence.on('not-present', sendNotPresent);
+      btp.removeAllListeners();
+      btp.on('present', sendPresent);
+      btp.on('not-present', sendNotPresent);
 
-      node.log("Starting bluetooth scan for "+ devices.length + " devices every "+ interval + " seconds!");
-      btPresence.start(true);
+      node.log("Starting Bluetooth scan for "+ devices.length + " devices every "+ interval + " seconds!");
+      btp.start(true);
 
       // On Close, stop the presence scan
       node.on('close', function () {
         node.log("Close bt-presence node");
-        btPresence.stop()
+        btp.stop()
       });
     }
   }
