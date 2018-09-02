@@ -1,5 +1,7 @@
 # node-red-contrib-bt-presence
 
+## USE AT YOUR OWN RISK
+
 A <a href="http://nodered.org" target="_new">Node-RED</a> node which uses l2ping to determine the presence of one or more bluetooth devices. This node
 provides the collective bluetooth state. Means, only if no bluetooth device at all is reachable, 'false' will be signalized.
 
@@ -28,6 +30,8 @@ Previous version stored 'present' and 'not preaent' in msg.payload. Make sure to
 
 ## Thanks
 Thanks to "cmvee" for the npm modul "bt-presence" which this node-red node uses.
+
+## USE AT YOUR OWN RISK
 
 # Copyright
 
