@@ -31,7 +31,7 @@ module.exports = function(RED) {
       const msg = {
         title: "BT present",
         description: "At least one BT device is available",
-        payload: true;
+        payload: true
       };
       node.send(msg)
     }
@@ -42,7 +42,7 @@ module.exports = function(RED) {
       const msg = {
         title: "BT not present",
         description: "No BT device of your devices list is available",
-        payload: false;
+        payload: false
       };
       node.send(msg)
     }
