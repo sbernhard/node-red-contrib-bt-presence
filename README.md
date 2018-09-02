@@ -20,6 +20,9 @@ Run the following command in the root directory of your Node-RED install or use 
 * A new msg will only be sent, in case of a change.
 * The interval is the time seconds between two checks.
 
+## Note for update to >=1.1.3
+Previous version stored 'present' and 'not preaent' in msg.payload. Make sure to change your flow to use 'true' and 'false'. 
+
 ## Loxone Configuration
 ![node-red-contrib-bt-presence](/doc/node-red-contrib-bt-presence.PNG)
 
