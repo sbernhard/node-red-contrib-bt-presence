@@ -34,10 +34,7 @@ Thanks to "cmvee" for the npm modul "bt-presence" which this node-red node uses.
 ## USE AT YOUR OWN RISK
 
 # Copyright
-Copyright
 
 Copyright(c) 2017 Bernhard Suttner / https://bernhard-suttner.de
 
-
-Copyright(c) 2017 Bernhard Suttner / https://bernhard-suttner.de
 
