@@ -13,6 +13,11 @@ Run the following command in the root directory of your Node-RED install or use 
 
     npm install node-red-contrib-bt-presence
 
+### Requirements (more details: https://github.com/cmvee/bt-presence)
+
+The l2ping linux binary requires root priveleges in order to write to bluetooth.
+Run sudo setcap 'cap_net_raw+eip' `which l2ping` in order to grant root priveleges to l2ping
+
 ## Usage
 
 * Add the bluetooth devices you want to scan. To enter more than one, use a comma to separate them. 
