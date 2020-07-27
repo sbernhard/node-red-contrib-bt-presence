@@ -20,12 +20,13 @@ Run sudo setcap 'cap_net_raw+eip' `which l2ping` in order to grant root priveleg
 
 ## Usage
 
-* Add the bluetooth devices you want to scan. To enter more than one, use a comma to separate them. 
+* Add the bluetooth devices you want to scan. To enter more than one, use a comma to separate them. (Use `hcitool scan` on Linux to scan Bluetooth devices and to know the address of them).
 * Set the scan interval.
 * Deploy your flow 
 * 'true' will be signalized in msg.payload in case of presence. Otherwise 'false'
 * A new msg will only be sent, in case of a change.
 * The interval is the time seconds between two checks.
+* Pairing is not necessary to be able to ping bluetooth devices
 
 ## Note for update to >=1.1.3
 Previous version stored 'present' and 'not preaent' in msg.payload. Make sure to change your flow to use 'true' and 'false'. 
